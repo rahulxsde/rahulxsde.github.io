@@ -4,14 +4,22 @@
   <!-- Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahulkumar Gupta | Fullstack Developer</title>
-  <meta name="description" content="Rahulkumar Gupta - Fullstack Developer portfolio.">
+
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+
+  <!-- SEO (Jekyll plugin) -->
+  {% seo %}
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Rahulkumar Gupta | Fullstack Developer">
-  <meta property="og:description" content="Portfolio of Rahulkumar Gupta - Fullstack Developer">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rahulxsde.github.io">
+  <meta property="og:url" content="{{ site.url }}">
+
+  <!-- Keywords (light SEO boost) -->
+  <meta name="keywords" content="Fullstack Developer, Web Developer, JavaScript Developer, React Developer, Node.js, Portfolio, Rahulkumar Gupta">
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +30,9 @@
 
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- Canonical URL (important for SEO) -->
+  <link rel="canonical" href="{{ site.url }}">
 </head>
 
 <body class="bg-gradient-to-br from-black via-gray-900 to-black text-white flex flex-col min-h-screen overflow-hidden">
@@ -33,20 +44,22 @@
   <!-- Main -->
   <main class="flex-grow flex items-center justify-center relative z-10">
 
-    <!-- Glass Box -->
     <div class="relative w-[90%] max-w-md p-10 rounded-2xl
                 bg-white/10 backdrop-blur-xl border border-white/20
                 shadow-2xl
                 animate__animated animate__fadeInUp
                 hover:scale-105 transition duration-500">
 
-      <!-- Content -->
       <h1 class="text-3xl font-bold mb-1 text-white">
         Rahulkumar Gupta
       </h1>
 
       <p class="text-sm text-gray-300 mb-6">
-        Fullstack developer
+        Fullstack Developer | JavaScript | React | Node.js
+      </p>
+
+      <p class="text-gray-300 text-sm">
+        I build fast, modern and scalable web applications with clean UI and strong backend systems.
       </p>
 
       <!-- Typing -->
@@ -60,15 +73,20 @@
 
   <!-- Footer -->
   <footer class="text-center text-gray-400 text-sm py-4 z-10">
-    © 2026 Rahulkumar Gupta
+    © 2026 Rahulkumar Gupta • Built with GitHub Pages + Jekyll
   </footer>
 
   <!-- Typed.js -->
   <script>
     new Typed("#typing", {
-      strings: ["profile is building....."],
+      strings: [
+        "Fullstack Developer",
+        "React Developer",
+        "Node.js Developer",
+        "Open Source Enthusiast"
+      ],
       typeSpeed: 50,
-      backSpeed: 20,
+      backSpeed: 30,
       loop: true
     });
   </script>
