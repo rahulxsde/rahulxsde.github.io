@@ -1,0 +1,11 @@
+title: Rahulkumar Gupta | Fullstack Developer
+description: Fullstack Developer specializing in modern Web & Mobile Application,Frontend and Backend development.
+url: "https://rahulxsde.github.io"
+baseurl: ""
+
+author: Rahulkumar Gupta
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
